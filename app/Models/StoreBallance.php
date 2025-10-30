@@ -29,4 +29,9 @@ class StoreBallance extends Model
     {
         return $this->hasMany(StoreBallanceHistory::class);
     }
+
+    public function withdrawals()
+    {
+        return $this->hasMany(Withdrawal::class);
+    }
 }
